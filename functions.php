@@ -21,7 +21,7 @@ add_action ('wp_enqueue_scripts', 'ds_js');
 add_action('wp_enqueue_scripts', function () {
 
   // Only on pages using aboutus.php
-  if ( is_page_template('aboutus.php') ) {
+  if ( is_page_template('aboutus.php') || is_page_template('team.php') ) {
     wp_enqueue_script(
       'tailwind-play',
       'https://cdn.tailwindcss.com'
