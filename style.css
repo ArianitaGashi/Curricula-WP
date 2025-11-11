@@ -1,10 +1,23 @@
 /*
-Theme Name: Digital School test
+Theme Name: Arianita Gashi / Wordpress
 Author: Arianita Gashi
 Description:  The Digital School Blog Theme is a modern, responsive, and user-friendly WordPress theme designed specifically for showcasing educational content, updates, and student achievements from Digital School. Built with clean and minimal design principles, this theme ensures an engaging reading experience while keeping the focus on content.
 Version: 1.0
 Tags: cool, blue, mobile ready, school, digital
 */
+
+.team-grid{
+  list-style:none; margin:0; padding:0;
+  display:grid; gap:22px;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+}
+.team-card{ background:#fff; border:1px solid #dbe7f5; border-radius:16px; box-shadow:0 4px 18px rgba(0,0,0,.05); padding:16px; display:grid; grid-template-columns:88px 1fr; gap:14px; }
+.team-photo img{ width:88px; height:88px; object-fit:cover; border-radius:50%; display:block; }
+.team-name{ margin:0; color:#06206a; font-size:20px; font-weight:800; }
+.team-role{ margin:4px 0 8px; color:#516287; font-weight:600; }
+.team-links a{ display:inline-block; margin-right:10px; background:#86bbf7; color:#06206a; text-decoration:none; font-weight:600; padding:6px 10px; border-radius:8px; }
+
+
 .rounded{
   width: 700px;
   height: 600px;
