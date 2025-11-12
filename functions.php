@@ -21,12 +21,17 @@ add_action ('wp_enqueue_scripts', 'ds_js');
 add_action('wp_enqueue_scripts', function () {
 
   // Only on pages using aboutus.php
-  if ( is_page_template('aboutus.php') || is_page_template('team.php') ) {
+  if ( is_page_template('aboutus.php')) {
     wp_enqueue_script(
       'tailwind-play',
       'https://cdn.tailwindcss.com'
     );
   }
+});
+
+add_action('after_setup_theme', function () {
+  add_theme_support('post-thumbnails');
+  add_image_size('team_avatar', 500, 500);
 });
 
 
